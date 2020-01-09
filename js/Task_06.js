@@ -13,13 +13,11 @@ let sum = digit01 + digit02 + digit03;
 let product = digit01 * digit02 * digit03;
 
 if (sum % 2 === 0) {
-    alert('Entered number: ' + userNumber + '\nThe first digit: ' + digit01 + 
-    '\nThe second digit: ' + digit02 + '\nThe third digit: ' + digit03 +
-    '\nThe sum of the digits: ' + sum + '\nThe sum status: even');
+    alert('Entered number: ' + userNumber + '\nThe first digit: ' + digit01 + '\nThe second digit: ' + digit02 + 
+    '\nThe third digit: ' + digit03 + '\nThe sum of the digits: ' + sum + '\nThe sum status: even');
 } else {
-    alert('Entered number: ' + userNumber + '\nIts first digit: ' + digit01 + 
-    '\nIts second digit: ' + digit02 + '\nIts third digit: ' + digit03 +
-    '\nThe sum of the digits: ' + sum + '\nThe sum status: odd');
+    alert('Entered number: ' + userNumber + '\nIts first digit: ' + digit01 + '\nIts second digit: ' + digit02 + 
+    '\nIts third digit: ' + digit03 + '\nThe sum of the digits: ' + sum + '\nThe sum status: odd');
 }
 
 if (sum % 5 === 0) {
