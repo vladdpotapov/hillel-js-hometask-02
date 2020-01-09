@@ -6,19 +6,19 @@
 
 let userNumber = parseInt(prompt('Enter the three-digit number'));
 
-let firstDigit = parseInt(userNumber / 100);
-let secondDigit = parseInt((userNumber / 10) % 10);
-let thirdDigit = parseInt(userNumber % 10);
-let sum = firstDigit + secondDigit + thirdDigit;
-let product = firstDigit * secondDigit * thirdDigit;
+let digit01 = parseInt(userNumber / 100);
+let digit02 = parseInt((userNumber / 10) % 10);
+let digit03 = parseInt(userNumber % 10);
+let sum = digit01 + digit02 + digit03;
+let product = digit01 * digit02 * digit03;
 
 if (sum % 2 === 0) {
-    alert('Entered number: ' + userNumber + '\nThe first digit: ' + firstDigit + 
-    '\nThe second digit: ' + secondDigit + '\nThe third digit: ' + thirdDigit +
+    alert('Entered number: ' + userNumber + '\nThe first digit: ' + digit01 + 
+    '\nThe second digit: ' + digit02 + '\nThe third digit: ' + digit03 +
     '\nThe sum of the digits: ' + sum + '\nThe sum status: even');
 } else {
-    alert('Entered number: ' + userNumber + '\nIts first digit: ' + firstDigit + 
-    '\nIts second digit: ' + secondDigit + '\nIts third digit: ' + thirdDigit +
+    alert('Entered number: ' + userNumber + '\nIts first digit: ' + digit01 + 
+    '\nIts second digit: ' + digit02 + '\nIts third digit: ' + digit03 +
     '\nThe sum of the digits: ' + sum + '\nThe sum status: odd');
 }
 

@@ -5,26 +5,26 @@
 
 let userNumber = parseInt(prompt('Enter the three-digit number'));
 
-let firstDigit = parseInt(userNumber / 100);
-let secondDigit = parseInt(userNumber / 10 % 10);
-let thirdDigit = parseInt(userNumber % 10);
+let digit01 = parseInt(userNumber / 100);
+let digit02 = parseInt(userNumber / 10 % 10);
+let digit03 = parseInt(userNumber % 10);
 
-if (firstDigit === secondDigit && firstDigit === thirdDigit) {
-    alert('Entered number: ' + userNumber + '\nThe first digit: ' + firstDigit +
-    '\nThe second digit: ' + secondDigit + '\nThe third digit: ' + thirdDigit +
+if (digit01 === digit02 && digit01 === digit03) {
+    alert('Entered number: ' + userNumber + '\nThe first digit: ' + digit01 +
+    '\nThe second digit: ' + digit02 + '\nThe third digit: ' + digit03 +
     '\nDigits status: equal');
 } else {
-    alert('Entered number: ' + userNumber + '\nThe first digit: ' + firstDigit +
-    '\nThe second digit: ' + secondDigit + '\nThe third digit: ' + thirdDigit +
+    alert('Entered number: ' + userNumber + '\nThe first digit: ' + digit01 +
+    '\nThe second digit: ' + digit02 + '\nThe third digit: ' + digit03 +
     '\nDigits status: not equal');
 }
 
-if (firstDigit === secondDigit) {
-    alert('The first digit: ' + firstDigit + ' - is equal to the second digit: ' + secondDigit);
-} else if (firstDigit === thirdDigit) {
-    alert('The first digit: ' + firstDigit + ' - is equal to the third digit: ' + thirdDigit);
-} else if (secondDigit === thirdDigit) {
-    alert('The second digit: ' + secondDigit + ' - is equal to the third digit: ' + thirdDigit);
+if (digit01 === digit02) {
+    alert('The first digit: ' + digit01 + ' - is equal to the second digit: ' + digit02);
+} else if (digit01 === digit03) {
+    alert('The first digit: ' + digit01 + ' - is equal to the third digit: ' + digit03);
+} else if (digit02 === digit03) {
+    alert('The second digit: ' + digit02 + ' - is equal to the third digit: ' + digit03);
 } else {
     alert('There are no equal digits in the number: ' + userNumber);
 }
